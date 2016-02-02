@@ -1,8 +1,10 @@
-Hello People!
-<br/>Foundation has been laid.<br/><br/>
+Reserving this file for the Marketing Landing Page. <br/> This page will have login button to allow members to access the features.
+<br/>
+<br/>
 
-We will be using Twitter Bootstrap for UI. I have plugged in Bootstrap in public/stylesheets and public/javascripts folders.
+<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+<script src="@routes.Assets.at("javascripts/bootstrap.min.js")"></script>
 
-
-
-
+<form method="post" action="@routes.Application.login()">
+<button class="btn btn-warning" type="submit">Login</button>
+</form>
